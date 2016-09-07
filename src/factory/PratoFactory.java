@@ -39,5 +39,4 @@ public class PratoFactory {
 		}
 		return null;
 	}
-
 }

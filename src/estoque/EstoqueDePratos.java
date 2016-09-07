@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 import factory.PratoFactory;
-import pratos.PratoCircular;
 import pratos.PratoPersonalizado;
 
 public class EstoqueDePratos {
@@ -105,21 +104,5 @@ public class EstoqueDePratos {
 			retorno = retorno + "\n" + prato;
 		}
 		return retorno;
-	}
-
-	public static void main(String[] args) throws Exception {
-
-		PratoPersonalizado pratoAzul = new PratoCircular(200, "estampa", 45);
-		PratoPersonalizado preto = new PratoCircular(300, "estampa", 45);
-		PratoPersonalizado rosa = new PratoCircular(400, "estampa", 45);
-		PratoPersonalizado verde = new PratoCircular(500, "estampa", 45);
-		EstoqueDePratos estoque = new EstoqueDePratos();
-
-		estoque.adicionaPrato(pratoAzul);
-		estoque.adicionaPrato(rosa);
-		estoque.adicionaPrato(preto);
-		estoque.adicionaPrato(verde);
-		System.out.println(estoque.getPratosOrdenadosPorPreco());
-
 	}
 }
